@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Portfolio|Abhijeet</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="css/bootstrap.min.css" rel = "stylesheet">
+		<link href ="css/styles.css" rel = "stylesheet">
+	</head>
+	
+	<body  style="background-color:#faf0d5">
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container-fluid">
+				<p class="navbar-brand" style="font-family:Times New Roman;color:White;text-align:left-side"><font size="5"><strong>ABHIJEET RANADIVE</strong></font></p>
+				<!--<p class="navbar-brand" style="font-family:Impact">Abhijeet Ranadive</p>-->
+				<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<div class="collapse navbar-collapse navHeaderCollapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="active" style="font-family:Impact;color:white;"><a href="index.html"><font size="3"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>   Home</font></a></li>
+						<li style="font-family:Impact"><a href="project.html"><font size="3">Projects</font></a></li>
+						<li style="font-family:Impact"><a href="resume.html"><font size="3">Resume</font></a></li>
+						<li class = "dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="font-family:Impact"><font size="3">Social Media</font><b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href= "https://in.linkedin.com/in/abhijeet-ranadive-a02aa662" target="_blank" class="drop">LinkedIn</a></li>
+								<li><a href= "https://github.com/Abhijeet3108" target="_blank" class="drop">GitHub</a></li>
+							</ul>
+						</li>	
+						<li style="font-family:Impact"><a href="#headline1"><font size="3">Contact</font></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<br>
+		<br>
+		<br>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12 col-xs-12">
+					<br class="hidden-lg hidden-md">
+					<br class="hidden-lg hidden-md">
+					<br class="hidden-lg hidden-md">
+					<br class="hidden-lg hidden-md">
+					<h1 id="ProjHeader"><strong><em><span style="font-family:Times New Roman;color:#222222">PROJECTS</span></em></strong></h2>
+				</div>
+			</div>
+			<hr style="border: 1px solid #1e1e15;height:0px;margin-left:0px;width:auto;text-align:center; ">
+		</div>
+		<br>
+		
+		<div class="container"> <!-- Email Security -->
+			<div class="row">
+				<div class="col-md-4">
+					<br>
+					<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="1450">
+					<!-- Indicators -->
+						  <ol class="carousel-indicators">
+							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+							<li data-target="#myCarousel" data-slide-to="1"></li>
+							<li data-target="#myCarousel" data-slide-to="2"></li>
+						  </ol>
+
+							  <!-- Wrapper for slides -->
+							  <div class="carousel-inner" role="listbox">
+								<div class="item active">
+								  <img style="width:100em;height:225px;max-height:225px;border:4px solid black" src="default_view.png" alt="Chania">
+								  <div class="carousel-caption">
+									<h3 id="carouselHeaders">Client View</h3>
+								  </div>
+								</div>
+
+							    <div class="item">
+									<img style="width:100em;height:225px;max-height:225px;border:4px solid black" src="gmail_body.png" alt="Chania">
+									<div class="carousel-caption">
+										<h3 id="carouselHeaders">Encrypted Email</h3>
+										
+									</div>
+								</div>
+
+								<div class="item">
+								  <img style="width:100em;height:225px;max-height:225px;border:4px solid black" src="password.png" alt="Flower">
+								  <div class="carousel-caption">
+									<h3 id="carouselHeaders">Key Sharing</h3>
+			
+								  </div>
+								</div>
+							</div>
+
+							  <!-- Left and right controls -->
+							  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							  </a>
+							  
+							  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							  </a>
+					</div>
+			    </div>
+				<div class= "col-md-1"></div>
+				<div class= "col-md-7">
+					<h3 style="font-family:Impact"><u>Email Security</u></h3>
+					<h4 style="font-family:Times New Roman;"><strong>Technology Used: Java</strong></h4>
+					<p id="projbody"><strong><em>Description:</em></strong></p>
+					<p id="projbody"><strong><em><span style="font-family:Cursive;"><font size="5">A</font></span></em></strong><strong>  java-based email client that uses end-to-end encryption for encrypting emails.The main reasons behind implementing this project is to reap benefits from Gmail that protects our data from external attackers, and also protect our confidential data from Gmail itself.	 The body of the email is encrypted, as a result email service providers (such as Gmail) will not be able to read our conversations and hence complete privacy of user emails will be maintained. To put a perspective, client side encryption and decryption is performed and if one opens Gmail from web-browser all the emails will be seem gibberish as the body of the email is encrypted indicating that even if Gmail decides to read our emails, no meaningful information can be recovered. Only our Java application that is residing on the client-side will be able to decrypt email for the user. It goes without mentioning that even if the email service provider is compromised, your data will still be secure. For implementing the solution we have used RSA public-private key pairs along with cryptographic algorithms such as AES-symmetric encryption, HMAC, RSA-public key encryption (OAEP) and PBKDF2.</strong></p>
+					<p id="projbody"><strong>Source code: </strong><a href="https://github.com/EmailSecurity/JavaClient"><em>Email Security</em></a></p>
+				</div>
+		</div>
+	</div>
+		<div class="container-fluid"> <!-- Line-->
+			<hr style="border: 1px solid #1e1e15;height:0px;margin-left:0px;width:auto;text-align:center; ">
+		</div>	
+		<div class="container"> <!-- R-programming -->
+			<div class="row">
+				<div class="col-md-4">
+					<br>
+					<div id="myCarousel1" class="carousel slide" data-ride="carousel" data-interval="1450">
+					<!-- Indicators -->
+						  <ol class="carousel-indicators">
+							<li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+							<li data-target="#myCarousel1" data-slide-to="1"></li>
+							<li data-target="#myCarousel1" data-slide-to="2"></li>
+						  </ol>
+
+							  <!-- Wrapper for slides -->
+							  <div class="carousel-inner" role="listbox">
+								<div class="item active">
+								  <img style="width:100em;height:225px;max-height:225px;border:4px solid black" src="R1.png" alt="Chania" />
+								  <div class="carousel-caption">
+									<h3 id="carouselHeaders">Iris Dataset</h3>
+								  </div>
+								</div>
+
+							    <div class="item">
+									<img style="width:100em;height:225px;max-height:225px;border:4px solid black" src="R2.png" alt="Chania"/>
+									<div class="carousel-caption">
+										<h3 id="carouselHeaders">Diamond Dataset</h3>
+										
+									</div>
+								</div>
+
+								<div class="item">
+								  <img style="width:100em;height:225px;max-height:225px;border:4px solid black" src="R3.png" alt="Flower"/>
+								  <div class="carousel-caption">
+									<h3 id="carouselHeaders">RStudio</h3>
+			
+								  </div>
+								</div>
+							</div>
+
+							  <!-- Left and right controls -->
+							  <a class="left carousel-control" href="#myCarousel1" role="button" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							  </a>
+							  
+							  <a class="right carousel-control" href="#myCarousel1" role="button" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							  </a>
+					</div>
+			    </div>
+				<div class= "col-md-1"></div>
+				<div class= "col-md-7">
+					<h3 style="font-family:Impact"><u>Data Analysis using R-programming</u></h3>
+					<h4 style="font-family:Times New Roman;"><strong>Technology Used: R-programming</strong></h4>
+					<p style="text-align:justify"><strong><em>Description:</em></strong></p>
+					<p style="text-align:justify"><strong><em><span style="font-family:Cursive;"><font size="5">I</font></span></em></strong><strong>  have maintained a repository of all the R-programs that I have implemented in order to analyze various datasets and identify patterns in them. I have a good-knowledge of Support Vector Machines for data-classification as I have classified a couple of datasets using the same. Datasets that have been analyzed range from basic ones such as the iris dataset to more complex ones such as sonar datasets. I have also implemented features of the Caret Package such as Data Partitioning, Data training and Data prediction in R using the open source data-sets available at the UCI repository. One of the data-set that I analyzed was of Sonar signals where it was required to distinguish between signals bounced off a metal cylinder and those off a roughly cylindrical rock and then examine the model's prediction on a separate test-set. The other data-set was about classifying leaves according to their species depending upon 14 attributes provided by the data-set and then again testing the model on a separate test-set. I evaluated each of the data-sets using "Random Forests", "Gradient Boosting Machines" and "Partial Least Squares regression" classification/regression models and analysed the accuracy of each of them. Apart from this there are more assignments related to data-modelling and predications using R-programming language available at my GitHub Repository.</strong></p>    
+					<p id="projbody"><strong>Source code: </strong><a href="https://github.com/Abhijeet3108/R-Programming"><em>R-programming</em></a></p>
+				</div>
+		</div>
+	</div>
+		<div class="container-fluid"> <!-- Line-->
+			<hr style="border: 1px solid #1e1e15;height:0px;margin-left:0px;width:auto;text-align:center; ">
+		</div>	
+		<div class="container"> <!-- Directed Research -->
+				<div class="row">
+				<div class="col-md-4">
+					<br>
+					<div id="myCarousel3" class="carousel slide" data-ride="carousel" data-interval="1450">
+					<!-- Indicators -->
+						  <ol class="carousel-indicators">
+							<li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
+							<li data-target="#myCarousel3" data-slide-to="1"></li>
+							<li data-target="#myCarousel3" data-slide-to="2"></li>
+						  </ol>
+
+							  <!-- Wrapper for slides -->
+							  <div class="carousel-inner" role="listbox">
+								<div class="item active">
+								  <img style="width:100em;height:225px;max-height:225px;border:4px solid black" src="research1.png" alt="Chania" />
+								  <div class="carousel-caption">
+									<h3 id="carouselHeaders">Torus Network</h3>
+								  </div>
+								</div>
+
+							    <div class="item">
+									<img style="width:100em;height:225px;max-height:225px;border:4px solid black" src="research2.png" alt="Chania"/>
+									<div class="carousel-caption">
+										<h3 id="carouselHeaders">Conflicts</h3>
+										
+									</div>
+								</div>
+
+								<div class="item">
+								  <img style="width:100em;height:225px;max-height:225px;border:4px solid black" src="research3.png" alt="Flower"/>
+								  <div class="carousel-caption">
+									<h3 id="carouselHeaders">Queues</h3>
+			
+								  </div>
+								</div>
+							</div>
+
+							  <!-- Left and right controls -->
+							  <a class="left carousel-control" href="#myCarousel3" role="button" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							  </a>
+							  
+							  <a class="right carousel-control" href="#myCarousel3" role="button" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							  </a>
+					</div>
+			    </div>
+				<div class= "col-md-1"></div>
+				<div class= "col-md-7">
+					<h3 style="font-family:Impact"><u>Torus Networks - Directed Research</u></h3>
+					<h4 style="font-family:Times New Roman;"><strong>Technology Used: Python</strong></h4>
+					<p style="text-align:justify"><strong><em>Description:</em></strong></p>
+					<p style="text-align:justify"><strong><em><span style="font-family:Cursive;"><font size="5">Under</font></span></em></strong><strong> the guidance of Prof. Oscar Morales Ponce, we are currently performing research to determine fundamental problems associated with the Torus Networks. In particular, we are developing a distributed algorithms for minimizing the longest queue in packet-switching networks. The results of the research will be used in Optimal Pattern Formation in Torus Networks through traffic lights. The research will be complete over a period of next six months. The project is being implemented in Python.</strong></p>    
+					<p id="projbody"><strong>Source code:<em> Not available due to a Non-disclosure agreement.</em></strong></p>
+				</div>
+		</div>
+		</div>
+		<div class="container-fluid"> <!-- Line-->
+			<hr style="border: 1px solid #1e1e15;height:0px;margin-left:0px;width:auto;text-align:center; ">
+		</div>
+		<div class="container"> <!-- Website -->
+		
+			<div class="row">
+				<div class="col-md-4">
+					<br>
+					<div id="myCarousel2" class="carousel slide" data-ride="carousel" data-interval="1450">
+					<!-- Indicators -->
+						  <ol class="carousel-indicators">
+							<li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+							<li data-target="#myCarousel2" data-slide-to="1"></li>
+							<li data-target="#myCarousel2" data-slide-to="2"></li>
+						  </ol>
+
+							  <!-- Wrapper for slides -->
+							  <div class="carousel-inner" role="listbox">
+								<div class="item active">
+								  <img style="width:100em;height:225px;max-height:225px;border:4px solid black" src="port1.png" alt="Chania" />
+								  <div class="carousel-caption">
+									<h3 id="carouselHeaders">Home Page</h3>
+								  </div>
+								</div>
+
+							    <div class="item">
+									<img style="width:100em;height:225px;max-height:225px;border:4px solid black" src="port2.png" alt="Chania"/>
+									<div class="carousel-caption">
+										<h3 id="carouselHeaders">Projects</h3>
+										
+									</div>
+								</div>
+
+								<div class="item">
+								  <img style="width:100em;height:225px;max-height:225px;border:4px solid black" src="port3.png" alt="Flower"/>
+								  <div class="carousel-caption">
+									<h3 id="carouselHeaders">Mobile Compatible</h3>
+			
+								  </div>
+								</div>
+							</div>
+
+							  <!-- Left and right controls -->
+							  <a class="left carousel-control" href="#myCarousel2" role="button" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							  </a>
+							  
+							  <a class="right carousel-control" href="#myCarousel2" role="button" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							  </a>
+					</div>
+			    </div>
+				<div class= "col-md-1"></div>
+				<div class= "col-md-7">
+					<h3 style="font-family:Impact"><u>Portfolio Website</u></h3>
+					<h4 style="font-family:Times New Roman;"><strong>Technology Used: HTML/CSS, Bootstrap 3</strong></h4>
+					<p style="text-align:justify"><strong><em>Description:</em></strong></p>
+					<p style="text-align:justify"><strong><em><span style="font-family:Cursive;"><font size="5">This</font></span></em></strong><strong>  website is designed using Html/css and twitter Bootstrap 3.</strong></p>    
+					<p id="projbody"><strong>Source code: </strong><a href="#"><em>Portfolio</em></a></p>
+				</div>
+		</div>
+	</div>
+		<br><br><br><br>
+		
+		<div class="container-fluid footer-class"> <!--Footer-->
+		 <a name="headline1"></a>
+         <div class="row">
+            <div class="col-md-4 col-md-offset-0 col-xs-12">
+               <div class="row">
+                  <div class="col-md-12 col-xs-12" id="phone-icon">
+                     <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>
+                  </div>
+                  <div class="col-md-12 col-md-12">
+                     <p style="text-align:center;color:white;">Mobile: +1(562)-787-8850</p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-4 col-md-offset-0 col-xs-12">
+               <div class="row">
+                  <div class="col-md-12 col-xs-12" id="mail-icon">
+                     <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                  </div>
+                  <div class="col-md-12 col-md-12">
+                     <a href="mailto:abhi.ranadive@gmail.com"><p style="text-align:center;color:white;">abhi.ranadive@gmail.com</p></a>
+                  </div>
+                  <div class="col-md-12 col-xs-12">
+                     <a href="mailto:abhijeet.ranadive@student.csulb.edu"><p style="text-align:center;color:white;">abhijeet.ranadive@student.csulb.edu</p></a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-4 col-md-offset-0 col-xs-12">
+               <div class="row">
+                  <div class="col-md-12 col-xs-12" id="follow-icon">
+                     <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>
+                  </div>
+                  <div class="col-md-12 col-md-12">
+                     <p class="footer-text" id="footer-linkedin">
+                     <a href="https://in.linkedin.com/in/abhijeet-ranadive-a02aa662" target="_blank"><span style="text-align:center;color:white;">Linkedin</span></a> | <a href="https://www.facebook.com/abhijeet.ranadive.1	" target="_blank"><span style="text-align:center;color:white;" >Facebook</span></a> | <a href="https://github.com/Abhijeet3108" target="_blank"><span style="text-align:center;color:white;" >GitHub</span></a>
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-0 col-md-offset-0 col-xs-0"></div>
+         </div>
+      </div>
+	</body>
+		
+				
+</html>
