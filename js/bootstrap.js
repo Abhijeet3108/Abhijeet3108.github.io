@@ -2371,7 +2371,7 @@ if (typeof jQuery === 'undefined') {
       if (target.length) {
         $('html, body').animate({
           scrollTop: target.offset().top
-        }, 1400);
+        },850);
         return false;
       }
     }
