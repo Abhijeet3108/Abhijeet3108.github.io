@@ -2371,11 +2371,15 @@ if (typeof jQuery === 'undefined') {
       if (target.length) {
         $('html, body').animate({
           scrollTop: target.offset().top
-        }, 850);
+        }, 1000);
         return false;
       }
     }
   });
+});
+
+  ('.nav a').on('click', function(){
+        $('.navbar-toggle').click() //bootstrap 3.x by Richard
 });
 
 }(jQuery);
