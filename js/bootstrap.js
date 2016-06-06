@@ -2363,7 +2363,7 @@ if (typeof jQuery === 'undefined') {
     }
   })
   
-  $(function() {
+  /*$(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
@@ -2376,6 +2376,6 @@ if (typeof jQuery === 'undefined') {
       }
     }
   });
-});
+});*/
 
 }(jQuery);
